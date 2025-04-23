@@ -3122,6 +3122,14 @@ justify-content: space-between;
 
 	@media screen and (max-width: 980px) {
 
+		.tab {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-end;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
 		/* Basic */
 
 			h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
