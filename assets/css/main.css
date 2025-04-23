@@ -72,6 +72,51 @@ input, select, textarea {
 	appearance: none;
 }
 
+.links{
+display: flex;
+justify-content: space-between;
+}
+
+
+/* Button */
+
+.tab{
+	display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.tab > .button1 {
+  background-color: #ffffff00; 
+  color: white; 
+  border: solid 2px #efefef;
+}
+
+.tab > .button1:hover {
+  border-color: #49bf9d;
+  color: white; 
+}
+
+.tab > .active {
+	border-color: #49bf9d;
+  color: white; 
+}
+
+/* Button */
+
 /* Nav */
 
 #navbar {
@@ -2484,7 +2529,7 @@ input, select, textarea {
 		background-color: transparent;
 		border-radius: 0.35em;
 		border: solid 3px #efefef;
-		color: #787878 !important;
+		color: #787878;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 400;
