@@ -2897,6 +2897,12 @@ justify-content: space-between;
 		width: calc(100% - 35%);
 	}
 
+	#main2 {
+				margin: 0;
+				padding: 6em 4em;
+				width: 100%;
+			}
+
 		#main > section {
 			border-top: solid 2px #efefef;
 			margin: 4em 0 0 0;
@@ -2908,6 +2914,30 @@ justify-content: space-between;
 				margin-top: 0;
 				padding-top: 0;
 			}
+
+		.container-game{
+				display: flex;
+    		flex-direction: column;
+    		justify-content: space-between;
+				align-items: center;
+    		height: 600px;
+		}
+
+
+			/* Time line Classes */
+
+			.time-line-body{
+				display: flex;
+    		flex-direction: row;
+    		justify-content: center;
+    		align-items: center;
+				padding:100px
+			}
+
+			.time-line-body > div{
+				width: 550px;
+			}
+			/* ``` */
 
 /* Poptrox */
 
