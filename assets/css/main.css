@@ -72,6 +72,89 @@ input, select, textarea {
 	appearance: none;
 }
 
+.links{
+display: flex;
+justify-content: space-between;
+}
+
+
+/* Button */
+
+.tab{
+	display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.tab > .button1 {
+  background-color: #ffffff00; 
+  color: white; 
+  border: solid 2px #efefef;
+}
+
+.tab > .button1:hover {
+  border-color: #49bf9d;
+  color: white; 
+}
+
+.tab > .active {
+	border-color: #49bf9d;
+  color: white; 
+}
+
+/* Button */
+
+/* Nav */
+
+#navbar {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #333;
+	position: -webkit-sticky; /* Safari */
+	z-index: 1;
+}
+
+.nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav > ul > li {
+  float: right;
+}
+
+.nav > ul > li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav > ul > li a:hover {
+  background-color: #111;
+}
+
+.nav > ul > li .active {
+  background-color: #4CAF50;
+}
+/* Nav */
+
 /* Basic */
 
 	html {
@@ -2446,7 +2529,7 @@ input, select, textarea {
 		background-color: transparent;
 		border-radius: 0.35em;
 		border: solid 3px #efefef;
-		color: #787878 !important;
+		color: #787878;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 400;
@@ -2605,6 +2688,7 @@ input, select, textarea {
 		text-align: right;
 		top: 0;
 		width: 35%;
+		z-index: 10;
 	}
 
 		#header > * {
@@ -3037,6 +3121,14 @@ input, select, textarea {
 /* Medium */
 
 	@media screen and (max-width: 980px) {
+
+		.tab {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-end;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 
 		/* Basic */
 
