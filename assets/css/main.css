@@ -2570,6 +2570,8 @@ input, select, textarea {
 			font-size: 0.8em;
 			line-height: 1.5em;
 			margin: 0;
+			display: flex;
+    		justify-content: space-between;
 		}
 
 /* Header */
